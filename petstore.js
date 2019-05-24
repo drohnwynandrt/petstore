@@ -7,7 +7,19 @@ class animal{
      
     }
 }
-for (i=1; i<=3; i++){
+
+class dog extends animal{
+    constructor(type){
+        super(type);
+            this.price="500";
+    }
+}
+
+let bulldog = new dog("Bulldog");
+bulldog.color="Gray"
+console.log(bulldog);
+
+/*for (i=1; i<=3; i++){
     let dog = new animal("Dog");
     allanimals.push(dog)
         dog.price="500";
@@ -27,3 +39,5 @@ for (i=1; i<=4; i++){
         bunny.id="bunny"+i;
 }
 console.log(allanimals);
+
+*/
