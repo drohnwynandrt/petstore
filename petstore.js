@@ -24,11 +24,12 @@ console.log(allanimals);
 
 window.onload=showAni();
 function showAni(){
-    for (i=0;i<allanimals.length;i++){
+    for (i=0;i<allanimals.length;i++){ 
         var newDiv = document.createElement("div");
         newDiv.id=allanimals[i].type+i;
         var divParent = document.getElementById("allAni");
         divParent.appendChild(newDiv); 
+        newDiv.textContent = allanimals[i].type + <br />+ allanimals[i].price + allanimals[i].teeth;
     }
 }
 
