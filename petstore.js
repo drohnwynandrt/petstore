@@ -29,7 +29,7 @@ function showAni(){
         newDiv.id=allanimals[i].type+i;
         var divParent = document.getElementById("allAni");
         divParent.appendChild(newDiv); 
-        newDiv.textContent = allanimals[i].type + <br />+ allanimals[i].price + allanimals[i].teeth;
+        newDiv.innerHTML = "Pet: "+allanimals[i].type + "<br />Price: €" + allanimals[i].price + "<br />Teeth: " +allanimals[i].teeth;
     }
 }
 
