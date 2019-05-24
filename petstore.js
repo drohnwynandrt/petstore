@@ -12,15 +12,18 @@ class dog extends animal{
     constructor(type){
         super(type);
             this.price="500";
-            this.coat="furry"
-            this.teeth="sharp"
+            this.coat="Furry"
+            this.teeth="Sharp"
+            
     }
 }
+for (i=1; i<=3; i++){
+    let bulldog = new dog("Bulldog");
+    allanimals.push(bulldog)
+    bulldog.color="Gray"
+    bulldog.id="bulldog"+i;
+}
 
-let bulldog = new dog("Bulldog");
-allanimals.push(bulldog)
-bulldog.color="Gray"
-console.log(allanimals);
 
 window.onload=showAni();
 function showAni(){
