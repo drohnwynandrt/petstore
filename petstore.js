@@ -22,13 +22,13 @@ allanimals.push(bulldog)
 bulldog.color="Gray"
 console.log(allanimals);
 
+window.onload=showAni();
 function showAni(){
-    for (i=1;i<=allanimals.length;i++){
-        document.createElement("div");
-        this.id=this.type+i;
+    for (i=0;i<allanimals.length;i++){
+        var newDiv = document.createElement("div");
+        newDiv.id=allanimals[i].type+i;
         var divParent = document.getElementById("allAni");
-        divParent.appendChild(this.id);
-        
+        divParent.appendChild(newDiv); 
     }
 }
 
