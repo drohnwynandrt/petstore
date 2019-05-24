@@ -16,8 +16,17 @@ class dog extends animal{
 }
 
 let bulldog = new dog("Bulldog");
+allanimals.push(bulldog)
 bulldog.color="Gray"
-console.log(bulldog);
+console.log(allanimals);
+
+
+function showAni(){
+    for (i=1;i<=allanimals.length;i++){
+        document.createElement("div");
+        
+    }
+}
 
 /*for (i=1; i<=3; i++){
     let dog = new animal("Dog");
