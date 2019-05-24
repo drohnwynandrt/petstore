@@ -12,6 +12,8 @@ class dog extends animal{
     constructor(type){
         super(type);
             this.price="500";
+            this.coat="furry"
+            this.teeth="sharp"
     }
 }
 
@@ -20,10 +22,12 @@ allanimals.push(bulldog)
 bulldog.color="Gray"
 console.log(allanimals);
 
-
 function showAni(){
     for (i=1;i<=allanimals.length;i++){
         document.createElement("div");
+        this.id=this.type+i;
+        var divParent = document.getElementById("allAni");
+        divParent.appendChild(this.id);
         
     }
 }
