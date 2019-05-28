@@ -1,6 +1,10 @@
 body{
     background-color: burlywood;
 }
+img{
+    margin: 10px;
+    border-radius: 50%;
+}
 #banner{
     background-image: url("banner.jpg");
     height: 406px;
@@ -26,7 +30,8 @@ body{
 
 .animaldiv{
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     background-color:beige;
     display: flex;
+    border-radius: 10%;
 }
