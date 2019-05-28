@@ -4,7 +4,6 @@ class animal{
         this.type=type; 
         this.color="various"; 
         this.price="various";
-     
     }
 }
 
@@ -14,10 +13,9 @@ class dog extends animal{
             this.price="500";
             this.coat="Furry"
             this.teeth="Sharp"
-            
     }
 }
-for (i=1; i<=3; i++){
+for (i=1; i<=11; i++){
     let bulldog = new dog("Bulldog");
     allanimals.push(bulldog)
     bulldog.color="Gray"
@@ -30,6 +28,7 @@ function showAni(){
     for (i=0;i<allanimals.length;i++){ 
         var newDiv = document.createElement("div");
         newDiv.id=allanimals[i].type+i;
+        newDiv.className="animaldiv";
         var divParent = document.getElementById("allAni");
         divParent.appendChild(newDiv); 
         newDiv.innerHTML = "Pet: "+allanimals[i].type + "<br />Price: €" + allanimals[i].price + "<br />Teeth: " +allanimals[i].teeth+"<br />Color: " +allanimals[i].color;

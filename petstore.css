@@ -1,4 +1,12 @@
 #allAni{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+    padding: 10px;
+}
+
+.animaldiv{
+    margin: 10px;
+    padding: 5px;
+    background-color:beige;
 }
