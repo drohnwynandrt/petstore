@@ -15,12 +15,30 @@ class dog extends animal{
             this.teeth="Sharp"
     }
 }
-for (i=1; i<=11; i++){
+for (i=0; i<=11; i++){
     let bulldog = new dog("Bulldog");
     allanimals.push(bulldog)
     bulldog.color="White"
     bulldog.id="bulldog"+i;
     bulldog.img='bulldogimage.jpg';
+}
+
+class bunny extends animal{
+    constructor(type){
+        super(type);
+            this.price="250";
+            this.coat="Furry"
+            this.teeth="Sharp"
+            this.size="Small"
+    }
+}
+
+for (i=0; i<=6; i++){
+    let brownBunny = new bunny("Bunny");
+    allanimals.push(brownBunny)
+    brownBunny.color="Brown"
+    brownBunny.id="bunny"+i;
+    brownBunny.img='bunnyimage.jpg';
 }
 
 
@@ -32,7 +50,7 @@ function showAni(){
         newDiv.className="animaldiv";
         var divParent = document.getElementById("allAni");
         divParent.appendChild(newDiv); 
-        newDiv.innerHTML = "<img height='200' width='200' src=' "+ allanimals[i].img + "'><br />Pet: "+allanimals[i].type + "<br />Price: €" + allanimals[i].price + "<br />Teeth: " +allanimals[i].teeth+"<br />Color: " +allanimals[i].color;
+        newDiv.innerHTML = "<img height='200' width='200' src=' "+ allanimals[i].img + "'><br />Pet: "+allanimals[i].type + "<br />Price: €" + allanimals[i].price + "<br />Teeth: " +allanimals[i].teeth+"<br />Color: " +allanimals[i].color+"<br />Size: " + allanimals[i].size;
     }
 }
 
