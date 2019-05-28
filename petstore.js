@@ -18,7 +18,7 @@ class dog extends animal{
 for (i=1; i<=11; i++){
     let bulldog = new dog("Bulldog");
     allanimals.push(bulldog)
-    bulldog.color="Gray"
+    bulldog.color="White"
     bulldog.id="bulldog"+i;
     bulldog.img='bulldogimage.jpg';
 }
