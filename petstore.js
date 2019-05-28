@@ -20,6 +20,7 @@ for (i=1; i<=11; i++){
     allanimals.push(bulldog)
     bulldog.color="Gray"
     bulldog.id="bulldog"+i;
+    bulldog.img='bulldogimage.jpg';
 }
 
 
@@ -31,7 +32,7 @@ function showAni(){
         newDiv.className="animaldiv";
         var divParent = document.getElementById("allAni");
         divParent.appendChild(newDiv); 
-        newDiv.innerHTML = "Pet: "+allanimals[i].type + "<br />Price: €" + allanimals[i].price + "<br />Teeth: " +allanimals[i].teeth+"<br />Color: " +allanimals[i].color;
+        newDiv.innerHTML = "<img height='200' width='200' src=' "+ allanimals[i].img + "'><br />Pet: "+allanimals[i].type + "<br />Price: €" + allanimals[i].price + "<br />Teeth: " +allanimals[i].teeth+"<br />Color: " +allanimals[i].color;
     }
 }
 
