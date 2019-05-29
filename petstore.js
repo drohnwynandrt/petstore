@@ -74,7 +74,7 @@ function showAni(){
         newDiv.className+=allanimals[i].pet;
         var divParent = document.getElementById("allAni");
         divParent.appendChild(newDiv); 
-        newDiv.innerHTML = "<img height='200' width='200' src=' "+ allanimals[i].img + "'><br />Breed: "+allanimals[i].type + "<br />Price: €" + allanimals[i].price + "<br />Teeth: " +allanimals[i].teeth+"<br />Color: " +allanimals[i].color+animalSize;
+        newDiv.innerHTML = "<p><img height='200' width='200' src=' "+ allanimals[i].img + "'></p><br />"+"<p><b>"+ allanimals[i].type +"</b>" + "<br />Price: €" + allanimals[i].price + "<br />Teeth: " +allanimals[i].teeth+"<br />Color: " +allanimals[i].color+animalSize+"</p>";
     }
 }
 
