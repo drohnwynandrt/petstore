@@ -2,8 +2,8 @@ body{
     background-color: burlywood;
 }
 img{
-    margin: 10px;
     border-radius: 50%;
+    margin: 5px
 }
 #banner{
     background-image: url("banner.jpg");
@@ -24,14 +24,16 @@ img{
 #allAni{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px;
-    padding: 10px;
 }
 
 .animaldiv{
+    vertical-align:center;
+    text-align:center;
     margin: 10px;
-    padding: 10px;
+    padding: 40px;
+    height: 240px;
+    width: 300px;
     background-color:beige;
     display: flex;
-    border-radius: 10%;
+    border-radius: 100%;
 }

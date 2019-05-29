@@ -29,7 +29,7 @@ class bunny extends animal{
 }
 
 
-for (i=0; i<=5; i++){
+for (i=0; i<=2; i++){
     let bulldog = new dog("Bulldog");
     allanimals.push(bulldog)
     bulldog.color="White"
@@ -47,7 +47,7 @@ for (i=0; i<=3; i++){
 
 
 
-for (i=0; i<=6; i++){
+for (i=0; i<=3; i++){
     let brownBunny = new bunny("Brown Bunny");
     allanimals.push(brownBunny)
     brownBunny.color="Brown"

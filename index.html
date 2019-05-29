@@ -12,7 +12,13 @@
     <div id="banner"></div>
     <div id="navBar">Navigation: Home Pets Supplies Toys</div>
     <div id="container">
-        <div>Sidebar Left</div>
+        <div>
+            Filter:
+            <select onchange="filterPet()" id="filterPet">
+                    <option value="dog">Dog</option>
+                    <option value="bunny">Bunny</option>
+            </select>
+        </div>
         <div id="allAni"></div>
         <div>Sidebar Right</div>
     </div>
