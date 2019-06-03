@@ -23,7 +23,7 @@ img{
 }
 #allAni{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .animaldiv{
@@ -35,5 +35,5 @@ img{
     height: 240px;
     width: 300px;
     background-color:beige;
-    border-radius: 100%;
+    border-radius: 10%;
 }
