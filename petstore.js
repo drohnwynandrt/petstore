@@ -100,23 +100,10 @@ function filterAni(){
     myDivs = document.getElementsByClassName("animaldiv");
 
     for (var allAni of myDivs) allAni.style.display="none"; 
-if (selFil == "bunny" ){
-    myBunnys =  document.getElementsByClassName("bunny");
- for (var myBunny of myBunnys)myBunny.style.display="flex";
+if (selFil == selFil ){
+    myFil = document.getElementsByClassName(selFil);
+ for (var myFilter of myFil)myFilter.style.display="flex";
 }
-else if (selFil == "dog" ){
-    myDogs =  document.getElementsByClassName("dog");
- for (var myDog of myDogs)myDog.style.display="flex";
-}
-else if (selFil == "cat" ){
-    myCats =  document.getElementsByClassName("cat");
- for (var myCat of myCats)myCat.style.display="flex";
-}
-else if(selFil == "---" ){
-    myAllAni =  document.getElementsByClassName("animaldiv");
- for (var myAll of myAllAni)myAll.style.display="flex";
-}
-
 }
 
 // stap 1 maak alle divs onzichtbaar, sstap 2 maak alle bunny zichtbaar , 3 maak de geselecteerde zichtbaar
