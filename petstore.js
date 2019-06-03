@@ -28,6 +28,15 @@ class bunny extends animal{
     }
 }
 
+class cat extends animal{
+    constructor(type){
+        super(type);
+            this.pet="cat"
+            this.price="1";
+            this.coat="Furry"
+            this.teeth="Sharp"
+    }
+}
 
 for (i=0; i<=2; i++){
     let bulldog = new dog("Bulldog");
@@ -46,13 +55,20 @@ for (i=0; i<=3; i++){
 }
 
 
-
 for (i=0; i<=3; i++){
     let brownBunny = new bunny("Brown Bunny");
     allanimals.push(brownBunny)
     brownBunny.color="Brown"
     brownBunny.id="brownBunny"+i;
     brownBunny.img='brownbunnyimage.jpg';
+}
+
+for (i=0; i<=2; i++){
+    let grayCat = new cat("Gray Cat");
+    allanimals.push(grayCat)
+    grayCat.color="Gray"
+    grayCat.id="grayCat"+i;
+    grayCat.img='graycatimage.jpg';
 }
 
 
@@ -78,7 +94,32 @@ function showAni(){
     }
 }
 
+var myDivs;
+function filterAni(){
+    var selFil = document.getElementById("filterAni").value;
+    myDivs = document.getElementsByClassName("animaldiv");
 
+    for (var allAni of myDivs) allAni.style.display="none"; 
+if (selFil == "bunny" ){
+    myBunnys =  document.getElementsByClassName("bunny");
+ for (var myBunny of myBunnys)myBunny.style.display="flex";
+}
+else if (selFil == "dog" ){
+    myDogs =  document.getElementsByClassName("dog");
+ for (var myDog of myDogs)myDog.style.display="flex";
+}
+else if (selFil == "cat" ){
+    myCats =  document.getElementsByClassName("cat");
+ for (var myCat of myCats)myCat.style.display="flex";
+}
+else if(selFil == "---" ){
+    myAllAni =  document.getElementsByClassName("animaldiv");
+ for (var myAll of myAllAni)myAll.style.display="flex";
+}
+
+}
+
+// stap 1 maak alle divs onzichtbaar, sstap 2 maak alle bunny zichtbaar , 3 maak de geselecteerde zichtbaar
 
 /*for (i=1; i<=3; i++){
     let dog = new animal("Dog");

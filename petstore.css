@@ -27,6 +27,7 @@ img{
 }
 
 .animaldiv{
+    display:flex;
     vertical-align:center;
     text-align:center;
     margin: 10px;
@@ -34,6 +35,5 @@ img{
     height: 240px;
     width: 300px;
     background-color:beige;
-    display: flex;
     border-radius: 100%;
 }
