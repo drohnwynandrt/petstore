@@ -94,7 +94,7 @@ function showAni(){
     }
 }
 
-var myDivs;
+
 function filterAni(){
     var selFil = document.getElementById("filterAni").value;
     myDivs = document.getElementsByClassName("animaldiv");
